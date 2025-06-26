@@ -10,17 +10,18 @@ In safety-critical domains like aerospace and embedded systems, writing reliable
 
 ---
 
-## 🧠 Model Highlights
+##  Model Highlights
 
-- ✅ **Base Model**: [TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
-- ⚙️ **Fine-Tuning Technique**: PEFT (Parameter-Efficient Fine-Tuning) with LoRA
-- 🧮 **Task Type**: Causal Language Modeling
-- 🧠 **Precision**: bfloat16 with 4-bit NF4 quantization using BitsAndBytes
-- 🗃️ **Dataset**: Synthetic dataset of RSS vector computation tasks (structured <input>, <output> format)
+- **Base Model**: [TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- **Fine-Tuning Technique**: PEFT (Parameter-Efficient Fine-Tuning) with LoRA
+- **Task Type**: Causal Language Modeling
+- **Precision**: bfloat16 with 4-bit NF4 quantization using BitsAndBytes
+- **Dataset**: Synthetic dataset of RSS vector computation tasks (structured <input>, <output> format)
 
 ---
 
 ## 📂 Dataset Format
 
 Each data point is structured as follows:
+
 ```<input> v = [a, b, c] rss_value = rss of vector v <output> -- Ada code computing RSS <|endoftext|> ```
